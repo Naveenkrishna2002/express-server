@@ -12,4 +12,4 @@ app.get("/about",(req,res)=>{
 app.get("/contact",(req,res)=>{
     res.send("Contact us at: naveen@expresscafe.com 📬")
 })
-app.listen(4000)
+app.listen(process.env.PORT||4000);
